@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>后台</title>
+     <!-- Favicons -->
+ <link href="../static/asset1/public/stylesheets/assets/img/favicon.png" rel="icon">
+ <!-- <link href="./public/stylesheets/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+ <!-- Template Main CSS File -->
+ <link rel="stylesheet" href="../static/asset1/public/stylesheets/assets/vendor/bootstrap/css/bootstrap.css">
+  <!-- Vendor JS Files -->
+  <script type="text/javascript" src="../static/asset1/public/stylesheets/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/asset1/public//stylesheets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/asset1/asset1/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome5-overrides.min.css">
+    <script type="text/javascript" src="../static/js/js/jquery.js"></script>
+
+    <link href="../static/css/jquery.searchableSelect.css" rel="stylesheet" type="text/css">
+
+
+    <!-- jquery特效 -->
+  <link rel="stylesheet" href="../static/public1/stylesheets/colored-theme.min.css">
+  <link rel="stylesheet" href="../static/public1/stylesheets/dark-theme.min.css">
+  <link rel="stylesheet" href="../static/public1/stylesheets/light-theme.min.css">
+
+      <!-- 上传图片 -->
+    <!-- <link href="../css/css2/bootstrap.min.css" rel="stylesheet"> -->
+<link href="../static/css/css2/bootstrap-fileinput.css" rel="stylesheet">
+    <style type="text/css">
+   #a li{
+list-style: none;
+   }
+   #b li{
+      margin-left: 25px;
+   }
+    </style>
+
+</head>
+
+<body id="page-top">
+    <select class="form-control" name="position" style="display: none;" id="notification-position">
+        <option value="top-center" selected>Top Center</option>
+        <!-- <option value="bottom-center" selected>Bottom Center</option>
+        <option value="top-right" selected>Top Right</option> -->
+        <!-- <option value="bottom-right">Bottom Right</option>
+        <option value="top-left">Top Left</option>
+        <option value="bottom-left">Bottom Left</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="close-timeout">Close Timeout</label> -->
+    <select class="form-control" name="position" style="display: none;"  id="close-timeout">
+        <option value="0" selected>Disabled</option>
+        <!-- <option value="1000">1 Sec</option>
+        <option value="3000">3 Sec</option>
+        <option value="5000">5 Sec</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Animation</label> -->
+    <select class="form-control" name="position" style="display: none;" id="animation">
+        <option value="none">None</option>
+        <option value="slide" selected>Slide</option>
+        <option value="fade">Fade</option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Buttons</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-buttons">
+        <label  class="custom-control-label" for="show-buttons" >Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Progress Bar</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-progress-bar">
+        <label class="custom-control-label" for="show-progress-bar">Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    </div> 
+     <!-- 捐助发布窗口 -->
+<div id="register" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">新增公益项目</h1>
+            </div>
+            <div class="modal-body">
+                <form id="form" class="form-group" >
+                  <!-- <div class="form-group" >
+                    <h4>  <label for="">求助人</label> </h4> -->
+                  
+                         <!-- <p>白血病救助</p> -->
+                    <input class="form-control" type="text" style="display: none;"  id="initiator" placeholder="求助人地址" required="">
+                <!-- </div> -->
+                <br>
+                <!-- <div class="form-group">
+                    <h4>  <label for="">项目序列号</label></h4>
+                    <input class="form-control" type="text" id="id" placeholder="项目序列号" required="">
+                </div> -->
+                        <div class="form-group" >
+                            <h4>  <label for="">项目标题</label> </h4>
+                          
+                                 <!-- <p>白血病救助</p> -->
+                            <input class="form-control" type="text"  id="title" placeholder="项目标题" required="">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h4>  <label for="">项目简介</label></h4>
+                            <input class="form-control" type="text" id="info" placeholder="项目简介" required="">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h4>  <label for="">目标金额</label></h4>
+                            <input class="form-control" type="text" id="goal" placeholder="目标金额" required="">
+                        </div>
+                        <br>
+                        
+                      
+                        <!-- <div class="fileinput fileinput-new" data-provides="fileinput"  id="exampleInputUpload">
+                            <div class="fileinput-new thumbnail" style="width: 200px;height: auto;max-height:150px;">
+                                <img id='picImg' style="width: 100%;height: auto;max-height: 140px;" src="" alt="" />
+                            </div>
+                            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                            <div>
+                                <h4>  <label for="">图片</label></h4>
+                                <span class="btn btn-primary btn-file">
+                                    <span class="fileinput-new">上传/更改头像</span>
+                                 
+                                    <input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png">
+                                </span>
+                                
+                            </div>
+                        </div> -->
+                        
+                            
+                            <!-- <input class="form-control" type="file" id="img" placeholder="图片" required=""> -->
+                        <!-- </div> -->
+                        
+                      
+                        <div class="text-right">
+                         <a  class="sendEthButton"><button class="btn btn-primary" id="uploadSubmit" onclick="tj()" type="button" >提交</button></a> 
+                          <!-- <input type="button" value="PRINT" onclick="listen()"/> -->
+                            <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                        </div>
+                       
+                </form>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>链上公益</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link " href="/index"><i class="fas fa-tachometer-alt"></i><span>首页</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/b"><i class="fas fa-user"></i><span>个人</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/c"><i class="fas fa-table"></i><span>捐赠</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/f"><i class="fas fa-table"></i><span>收藏</span></a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="/e"><i class="fas fa-table"></i><span>项目分类</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login"><i class="far fa-user-circle"></i><span>登录</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register"><i class="fas fa-user-circle"></i><span>注册</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                          
+                           
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <!-- <h3 class="text-dark mb-4">
+                        <a href="../html/index.html"> 
+                        <img style="width: 64px;
+                        height: 44px;" src="../static/images/img/a.webp"></a>
+                        </h3> -->
+                      
+                        <a data-toggle="modal"   data-target="#register"><button class="btn btn-primary py-0" type="button"  >增加</button></a>
+                        <hr>
+                    <div class="card shadow">
+                      
+                        <div class="card-header py-3">
+                            <!-- <center>
+                                <select name="myselect" id="myselect">
+                                    <option  value="全部项目">全部项目 </option>
+                                    <option  value="教育助学">教育助学</option>
+                                    <option  value="疾病救助">疾病救助</option>
+                                    <option  value="济困救灾">济困救灾</option>
+                                    <option  value="自然保护">自然保护</option>
+                                    
+                                    </select>
+                                   <script>
+                          
+
+                                   </script>
+                            </center> -->
+                            <p class="text-primary m-0 fw-bold">捐助分类</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 text-nowrap"  >
+                                    <!-- <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                <option value="10" selected="">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>&nbsp;</label></div>
+                                </div> -->
+                                <div class="col-md-6 ">
+                                    <!-- <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="搜索"></label></div> -->
+                                </div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <!-- <thead id="b">
+                                        <ul id="b">
+                                            <li onclick="q()" class="btn btn-primary py-0">教育助学</li></a>
+                                            <li onclick="w()"class="btn btn-primary py-0">疾病救助</li>
+                                            <li onclick="e()" class="btn btn-primary py-0">济困救灾</li>
+                                            <li onclick="r()" class="btn btn-primary py-0">自然保护</li>
+                                          
+                                        </ul>
+                                            
+                                           
+                                             <th onclick="q()"  >教育助学</th>
+                                            <th onclick="w()" >疾病救助</th>
+                                            <td onclick="e()"  >济困救灾</td>
+                                            
+                                            <td onclick="r()" >自然保护</td>
+                                        
+                                    </thead> -->
+                                   
+                                    <!-- <tfoot> -->
+                                        <tr>
+                                            <th>捐助项目</th>
+                                            <td><strong>简介</strong></td>
+                                            <th>操作</th>
+                                        </tr>
+                                    <!-- </tfoot> -->
+                                    <tbody class="Add">
+          
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">详情页</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>灯火入眉</span></div>
+                    
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="../static/public1/javascripts/web3.min.js"></script>
+    <script src="../static/js/manage.js"></script>
+    <script src="../static/js/js/jquery.js"></script>
+    <script src="../static/js/js2/jquery.min.js"></script>
+    <script src="../static/js/js2//bootstrap-fileinput.js"></script>
+     
+    <script src="../static/js/jquery-1.11.1.min.js"></script>
+<script src="../static/js/jquery.searchableSelect.js"></script>
+    <script src="../static/asset1/asset1/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/asset1/asset1/js/bs-init.js"></script>
+    <script src="../static/asset1/asset1/js/theme.js"></script>
+
+
+    
+    <!-- jq特效 -->
+      
+  <script type="text/javascript" src="../static/public1/stylesheets/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/stylesheets/assets/vendor/jquery/jquery.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+
+  <script src="../static/public1/stylesheets/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="/stylesheets/assets/js/main.js"></script> -->
+
+ 
+ 
+   <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.min.js"></script> 
+   <!-- <script src="./public/javascripts/index.js"></script> -->
+   <script src="../static/public1/stylesheets/growl-notification.min.js"></script>
+   <script src="../static/public1/javascripts/web3.min.js"></script>
+
+   
+</body>
+
+</html>

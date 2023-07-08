@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>我的捐赠</title>
+    <link rel="stylesheet" href="../static/asset1/asset1/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome5-overrides.min.css">
+    <script type="text/javascript" src="../static/js/js/jquery.js"></script>
+    <style type="text/css">
+     
+
+   #a li{
+list-style: none;
+   }
+    </style>
+
+      <!-- jquery特效 -->
+      <link rel="stylesheet" href="../static/public1/stylesheets/colored-theme.min.css">
+      <link rel="stylesheet" href="../static/public1/stylesheets/dark-theme.min.css">
+      <link rel="stylesheet" href="../static/public1/stylesheets/light-theme.min.css">
+    
+
+</head>
+
+<body id="page-top">
+    <select class="form-control" name="position" style="display: none;" id="notification-position">
+        <option value="top-center" selected>Top Center</option>
+        <!-- <option value="bottom-center" selected>Bottom Center</option>
+        <option value="top-right" selected>Top Right</option> -->
+        <!-- <option value="bottom-right">Bottom Right</option>
+        <option value="top-left">Top Left</option>
+        <option value="bottom-left">Bottom Left</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="close-timeout">Close Timeout</label> -->
+    <select class="form-control" name="position" style="display: none;"  id="close-timeout">
+        <option value="0" selected>Disabled</option>
+        <!-- <option value="1000">1 Sec</option>
+        <option value="3000">3 Sec</option>
+        <option value="5000">5 Sec</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Animation</label> -->
+    <select class="form-control" name="position" style="display: none;" id="animation">
+        <option value="none">None</option>
+        <option value="slide" selected>Slide</option>
+        <option value="fade">Fade</option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Buttons</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-buttons">
+        <label  class="custom-control-label" for="show-buttons" >Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Progress Bar</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-progress-bar">
+        <label class="custom-control-label" for="show-progress-bar">Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    </div> 
+         
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>链上公益</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link " href="/index"><i class="fas fa-tachometer-alt"></i><span>首页</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="/b"><i class="fas fa-user"></i><span>个人</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/c"><i class="fas fa-table"></i><span>捐赠</span></a></li>
+                   
+                    <li class="nav-item"><a class="nav-link active" href="/f"><i class="fas fa-table"></i><span>收藏</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/e"><i class="fas fa-table"></i><span>项目分类</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login"><i class="far fa-user-circle"></i><span>登录</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register"><i class="fas fa-user-circle"></i><span>注册</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                           
+                           
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">
+                        </h3>
+                       
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 fw-bold">已收藏</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 text-nowrap"  >
+                              
+                                <div class="col-md-6 ">
+                                   
+                                </div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th>收藏项目</th>
+                                            <td><strong>收藏日期</strong></td>
+                                            <th>该项目目标金额</th>
+                                            <th>详情</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="add">
+
+                                        <!-- <img class="rounded-circle me-2" width="30" height="30" src="../static/asset1/asset1/img/avatars/avatar1.jpeg"> -->
+                                       
+                                        
+                                    </tbody>
+                                   
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">详情页</p>
+                                </div>
+                                <div class="col-md-6">
+                           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>灯火入眉</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script>
+
+
+    $.ajax({
+    url:"http://localhost:8080/dai/getOneFamout",
+    type:"post",
+    dataType:"json",
+    data:{initiator:initiator,id:2},
+    success:function (data1){
+console.log(data1.data)
+$(".amount").html(data1.data.Amount);
+
+    }})
+
+
+
+        function a(){
+   
+            var a=document.getElementById("a");
+            if(a.style.display="none"){
+                a.style.display="block"
+                // alert("显示")
+            
+            }
+          
+        }
+    </script>
+      <!-- jq特效 -->
+      <script src="../static/public1/javascripts/web3.min.js"></script>  
+  <script type="text/javascript" src="../static/public1/stylesheets/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/stylesheets/assets/vendor/jquery/jquery.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+
+  <script src="../static/public1/stylesheets/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.min.js"></script> 
+  <!-- <script src="./public/javascripts/index.js"></script> -->
+  <script src="../static/public1/stylesheets/growl-notification.min.js"></script>
+  <script src="../static/public1/javascripts/web3.min.js"></script>
+
+
+    <script src="../static/js/inscollect.js"></script>
+    <script src="../static/asset1/asset1/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/asset1/asset1/js/bs-init.js"></script>
+    <script src="../static/asset1/asset1/js/theme.js"></script>
+</body>
+
+</html>
+
