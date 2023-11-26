@@ -1,0 +1,11 @@
+#content .column .padding .wrap img {
+	width: 230px;
+
+}
+#content .column {
+	float: left;
+	/* margin-left: -28px; */
+}
+#content{
+	margin-left: 20px;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../static/asset1/asset1/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome5-overrides.min.css">
+
+
+
+
+<!-- jquery特效 -->
+  <link rel="stylesheet" href="../static/public1/stylesheets/colored-theme.min.css">
+  <link rel="stylesheet" href="../static/public1/stylesheets/dark-theme.min.css">
+  <link rel="stylesheet" href="../static/public1/stylesheets/light-theme.min.css">
+
+</head>
+
+<body class="bg-gradient-primary">
+    <select class="form-control" name="position" style="display: none;" id="notification-position">
+        <option value="top-center" selected>Top Center</option>
+        <!-- <option value="bottom-center" selected>Bottom Center</option>
+        <option value="top-right" selected>Top Right</option> -->
+        <!-- <option value="bottom-right">Bottom Right</option>
+        <option value="top-left">Top Left</option>
+        <option value="bottom-left">Bottom Left</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="close-timeout">Close Timeout</label> -->
+    <select class="form-control" name="position" style="display: none;"  id="close-timeout">
+        <option value="0" selected>Disabled</option>
+        <!-- <option value="1000">1 Sec</option>
+        <option value="3000">3 Sec</option>
+        <option value="5000">5 Sec</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Animation</label> -->
+    <select class="form-control" name="position" style="display: none;" id="animation">
+        <option value="none">None</option>
+        <option value="slide" selected>Slide</option>
+        <option value="fade">Fade</option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Buttons</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-buttons">
+        <label  class="custom-control-label" for="show-buttons" >Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Progress Bar</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-progress-bar">
+        <label class="custom-control-label" for="show-progress-bar">Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    </div> 
+    <div class="container">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-flex">
+                        <div class="flex-grow-1 bg-register-image" style="background-image: url(&quot;../static/asset1/asset1/img/dogs/image2.jpeg&quot;);"></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-dark mb-4">创建账户!</h4>
+                            </div>
+                            <!-- <form class="user"> -->
+                                <!-- <div class="row mb-3">
+                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="名" name="first_name"></div>
+                                    <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="姓" name="last_name"></div>
+                                </div> -->
+                                <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" onChange="checkname(this.value)" minlength="6" maxlength="11" placeholder="用户名" required="" name="username"></div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" onChange="checkpwd(this.value)" minlength="6" maxlength="11" placeholder="密码" required="" name="password"></div>
+                                    <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" onChange="checkrepwd(this.value)" minlength="6" maxlength="11" placeholder="再次输入密码" required="" name="password_repeat"></div>
+                                </div>
+
+                                <input onclick="check()" type="submit" class="btn btn-primary d-block btn-user w-100" value="注册账号">
+                                <!-- <button onclick="check()" class="btn btn-primary d-block btn-user w-100">注册账号</button> -->
+                                <!-- <hr><a class="btn btn-primary d-block btn-google btn-user w-100 mb-2" role="button"><i class="fab fa-google"></i>&nbsp; 使用谷歌注册</a><a class="btn btn-primary d-block btn-facebook btn-user w-100" role="button"><i class="fab fa-facebook-f"></i>&nbsp; 使用脸书注册</a> -->
+                                <hr>
+                            </form>
+                           
+                            <div class="text-center"><a class="small" href="/login">已有账号? 登陆!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script type="text/javascript">
+        function getOptions() {
+    var position = $('#notification-position').val();
+    var closeTimeout = $('#close-timeout').val();
+    var animation = $('#animation').val();
+    var showButtons = $('#show-buttons').get(0).checked;
+    var showProgressBar = $('#show-progress-bar').get(0).checked;
+    var animationOptions = {
+        open: animation + '-in',
+        close: animation + '-out'
+    };
+
+    if (animation === 'none') {
+        animationOptions = {
+            open: false,
+            close: false
+        };
+    }
+
+    return options = {
+        description: 'I am a success notification',
+        position: position,
+        closeTimeout: closeTimeout,
+        closeWith: ['click'],
+        animation: animationOptions,
+        showButtons: showButtons,
+        buttons: {
+            action: {
+                callback: function(notification) {
+                    console.log('action button');
+                }
+            }
+        },
+        showProgress: showProgressBar
+    };
+}
+
+function checkname(){
+           var username = $("#exampleInputEmail").val() //得到前端输入的账户
+           var password = $("#examplePasswordInput").val() //得到前端输入的密码
+           var repassword = $("#exampleRepeatPasswordInput").val()
+           console.log(username)
+           console.log(username.value)
+          if(username==""){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '请填写用户名！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 10000;
+        GrowlNotification.notify(options);
+       
+        return false;
+          }else if(username!=""&&(username.length>11||username.length<6)){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '用户名长度应小于11位，大于6位！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+       
+        
+        return false;
+          }
+}
+function checkpwd(){
+           var username = $("#exampleInputEmail").val() //得到前端输入的账户
+           var password = $("#examplePasswordInput").val() //得到前端输入的密码
+           var repassword = $("#exampleRepeatPasswordInput").val()
+          if(password==""){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '请填写密码！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 10000;
+        GrowlNotification.notify(options);
+        
+        return false;
+          }else if(password!=""&&(password.length>11||password.length<6)){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '密码长度应小于11位，大于6位！！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 10000;
+        GrowlNotification.notify(options);
+
+       
+        return false;
+          }
+}
+function checkrepwd(){
+           var username = $("#exampleInputEmail").val() //得到前端输入的账户
+           var password = $("#examplePasswordInput").val() //得到前端输入的密码
+           var repassword = $("#exampleRepeatPasswordInput").val()
+           if(repassword==""){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '请填写确定密码！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+       
+        return false;
+          }else if(repassword!=undefined&&password==repassword&&(repassword.length>11||repassword.length<6)){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '密码长度应小于11位，大于6位！！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+        
+        return false;
+          }else if(repassword!=""&&password!=repassword&&(6<=repassword.length<=11)){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '两次密码输入不一致！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 10000;
+        GrowlNotification.notify(options);
+       
+        return false;
+          }
+}
+
+         //注册
+         function check(){
+            
+           var username = $("#exampleInputEmail").val() //得到前端输入的账户
+           var password = $("#examplePasswordInput").val() //得到前端输入的密码
+           var repassword = $("#exampleRepeatPasswordInput").val()
+           console.log(username.type)
+           if(username!=""&&password!=""){
+                if((username.length<=11&&username.length>=6)&&(password.length<=11&&password.length<=6)){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '用户名长度应小于11位，大于6位！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+       
+        
+       
+          
+        //    alert("注册成功")
+        //    window.location.href="http://localhost:8080/login"
+           $.ajax({//通过ajax触发post请求
+                  method:"post",
+                  url:"http://localhost:8080/dai/register",//post请求路径
+                  data:{username:username,password:password}, //对应相对数据
+                  success:function (data){
+                      console.log(data.data)
+                      if (data.data==0){
+                         
+                        var options = getOptions();
+        options.title = '信息';
+        options.description = '注册失败';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+       
+                        //   window.location.href="http://localhost:8080/register"
+                      }
+                  },
+                  error:function (data){
+                      
+                   
+                      var options = getOptions();
+        options.title = '信息';
+        options.description = '注册成功!';
+        options.width = 300;
+        options.type = 'success';
+        options.closeTimeout = 10000;
+        GrowlNotification.notify(options);
+        
+                      window.location.href="http://localhost:8080/login"
+                  }
+              })
+
+            }
+
+
+         }else if(username!=undefined&&password==undefined){
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '密码未填写！';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+         }else{
+            var options = getOptions();
+        options.title = '信息';
+        options.description = '请填写用户名和密码!';
+        options.width = 300;
+        options.type = 'error';
+        options.closeTimeout = 1000;
+        GrowlNotification.notify(options);
+          }
+        }
+    
+    </script>
+    <!-- <script type="text/javascript" src="../static/js/js/jquery.js"></script> -->
+    <script src="../static/asset1/asset/js/jquery.min.js"></script>
+    <script src="../static/asset1/asset1/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/asset1/asset1/js/bs-init.js"></script>
+    <script src="../static/asset1/asset1/js/theme.js"></script>
+
+
+    <!-- jq特效 -->
+      
+  <script type="text/javascript" src="../static/public1/stylesheets/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/stylesheets/assets/vendor/jquery/jquery.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+
+  <script src="../static/public1/stylesheets/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="/stylesheets/assets/js/main.js"></script> -->
+
+ 
+ 
+   <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.min.js"></script> 
+   <!-- <script src="./public/javascripts/index.js"></script> -->
+   <script src="../static/public1/stylesheets/growl-notification.min.js"></script>
+   <script src="../static/public1/javascripts/web3.min.js"></script>
+
+</body>
+
+</html>

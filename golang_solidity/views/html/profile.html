@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>个人页面</title>
+    <link rel="stylesheet" href="../static/asset1/asset1/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome5-overrides.min.css">
+    <script type="text/javascript" src="../static/js/js/jquery.js"></script>
+
+    <link href="../static/css/jquery.searchableSelect.css" rel="stylesheet" type="text/css">
+    <!-- <script type="text/javascript" src="../static/js/jquery.js"></script> -->
+   <!-- jquery特效 -->
+   <link rel="stylesheet" href="../static/public1/stylesheets/colored-theme.min.css">
+   <link rel="stylesheet" href="../static/public1/stylesheets/dark-theme.min.css">
+   <link rel="stylesheet" href="../static/public1/stylesheets/light-theme.min.css">
+ 
+    <!-- 上传图片 -->
+    <!-- <link href="../css/css2/bootstrap.min.css" rel="stylesheet"> -->
+<link href="../static/css/css2/bootstrap-fileinput.css" rel="stylesheet">
+
+    <script>
+        $(document).ready(function() {
+            $('#slider').coinslider({ 
+                hoverPause: true,
+                titleSpeed: 500,
+                width: 948,
+                height: 367,
+                effect: 'random',
+            
+            });
+        });
+        </script>
+        
+        <script>
+            $(document).ready(function(){
+                    $(".controls").click(function(e){
+                        if($(this).hasClass('down-arrow')) {
+                            $(this).addClass('up-arrow').removeClass('down-arrow');
+                        }
+                        else {
+                            $(this).addClass('down-arrow').removeClass('up-arrow');
+                        }
+                        e.preventDefault();
+                        $("#logo-background").slideToggle("slow");
+                    });
+            });
+        </script>
+</head>
+
+<body id="page-top">
+    <select class="form-control" name="position" style="display: none;" id="notification-position">
+        <option value="top-center" selected>Top Center</option>
+        <!-- <option value="bottom-center" selected>Bottom Center</option>
+        <option value="top-right" selected>Top Right</option> -->
+        <!-- <option value="bottom-right">Bottom Right</option>
+        <option value="top-left">Top Left</option>
+        <option value="bottom-left">Bottom Left</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="close-timeout">Close Timeout</label> -->
+    <select class="form-control" name="position" style="display: none;"  id="close-timeout">
+        <option value="0" selected>Disabled</option>
+        <!-- <option value="1000">1 Sec</option>
+        <option value="3000">3 Sec</option>
+        <option value="5000">5 Sec</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Animation</label> -->
+    <select class="form-control" name="position" style="display: none;" id="animation">
+        <option value="none">None</option>
+        <option value="slide" selected>Slide</option>
+        <option value="fade">Fade</option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Buttons</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-buttons">
+        <label  class="custom-control-label" for="show-buttons" >Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Progress Bar</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-progress-bar">
+        <label class="custom-control-label" for="show-progress-bar">Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    </div> 
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>链上公益</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <ul class="navbar-nav text-light" id="accordionSidebar">
+                        <li class="nav-item"><a class="nav-link " href="/index"><i class="fas fa-tachometer-alt"></i><span>首页</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="/b"><i class="fas fa-user"></i><span>个人</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/c"><i class="fas fa-table"></i><span>捐赠</span></a></li>
+                  
+                    <li class="nav-item"><a class="nav-link active" href="/f"><i class="fas fa-table"></i><span>收藏</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/e"><i class="fas fa-table"></i><span>项目分类</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login"><i class="far fa-user-circle"></i><span>登录</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register"><i class="fas fa-user-circle"></i><span>注册</span></a></li>
+                    </ul>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <!-- <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form> -->
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span id="judge" class="d-none d-lg-inline me-2 text-gray-600 small">未登录！</span><img class="border rounded-circle img-profile" src="../static/asset1/asset1/img/avatars/avatar1.jpeg" ></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="../views/profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;个人中心</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;活动历程</a>
+                                        <div class="dropdown-divider"></div><a onclick="exit()" class="dropdown-item"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;退出登录</a>
+                                    </div>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4"></h3>
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <div class="card mb-3">
+                                <div class="card-body text-center shadow">
+                                    <!-- <img class="rounded-circle mb-3 mt-4" src="../asset1/asset1/img/dogs/image2.jpeg" width="160" height="160"> -->
+                                    <div class="mb-3">
+<!-- 封装好的 -->
+                                        <div class="fileinput fileinput-new" data-provides="fileinput"  id="exampleInputUpload">
+                                            <div class="fileinput-new thumbnail" style="width: 200px;height: auto;max-height:150px;">
+                                                <img id='picImg' style="width: 100%;height: auto;max-height: 140px;" src="/images/img/images/img_0.png" alt="" />
+                                            </div>
+                                            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                                            <div>
+                                                <span class="btn btn-primary btn-file">
+                                                    <span class="fileinput-new">上传/更改头像</span>
+                                                    <span class="fileinput-exists">换一张</span>
+                                                    <input type="file" name="pic1" id="picID" accept="image/gif,image/jpeg,image/x-png">
+                                                </span>
+                                                <a href="javascript:;" class="btn btn-warning fileinput-exists" data-dismiss="fileinput">移除</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- <input type= class="btn btn-primary btn-sm"> -->
+                                        <!-- <button class="btn btn-primary btn-sm" type="button">上传/更改头像</button> -->
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4">
+                                <!-- <div class="card-header py-3">
+                                    <h6 class="text-primary fw-bold m-0">Projects</h6>
+                                </div> -->
+                                <!-- <div class="card-body">
+                                    <h4 class="small fw-bold">Server migration<span class="float-end">20%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="visually-hidden">20%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Sales tracking<span class="float-end">40%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="visually-hidden">40%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Customer Database<span class="float-end">60%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="visually-hidden">60%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Payout Details<span class="float-end">80%</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Account setup<span class="float-end">Complete!</span></h4>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row mb-3 d-none">
+                                <div class="col">
+                                    <div class="card textwhite bg-primary text-white shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card textwhite bg-success text-white shadow">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="m-0">Peformance</p>
+                                                    <p class="m-0"><strong>65.2%</strong></p>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                            </div>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card shadow mb-3">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 fw-bold">个人信息</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="username">
+                                                                <strong>用户名</strong>
+                                                            </label>
+                                                            <p id="username"></p>
+                                                                <input class="form-control" type="text"  id="username1"  name="username">
+                                                            </div>
+                                                    </div>
+                                                    <!-- <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>邮箱地址</strong></label><input class="form-control" type="email" id="email" placeholder="输入要更改的邮箱地址" name="email"></div>
+                                                    </div> -->
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>密码 (已加密)</strong></label>
+                                                            <p id="password"></p>
+                                                            <input class="form-control" type="text" id="password1"  name="password">
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>手机号码</strong></label><input class="form-control" type="email" id="repassword" placeholder="输入要更改的手机号码" name="phone"></div>
+                                                    </div> -->
+                                                    
+                                                </div>
+                                               <center>
+                                                <div class="mb-3"><button class="btn btn-primary btn-sm" onclick="change()" type="button">保存设置</button></div>
+                                            </center>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="card shadow">
+                                        <div class="card-header py-3">
+                                            <p class="text-primary m-0 fw-bold">Contact Settings</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="mb-3"><label class="form-label" for="address"><strong>Address</strong></label><input class="form-control" type="text" id="address" placeholder="Sunset Blvd, 38" name="address"></div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="city"><strong>City</strong></label><input class="form-control" type="text" id="city" placeholder="Los Angeles" name="city"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-3"><label class="form-label" for="country"><strong>Country</strong></label><input class="form-control" type="text" id="country" placeholder="USA" name="country"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
+                                            </form>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <!-- <h3 class="text-dark mb-0"><a href="../views/index.html"> <img style="width: 64px;
+                            height: 44px;" src="../images/img/a.webp"></a>
+                            </h3> -->
+                        <!-- <a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a> -->
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><h3><a href="/c" style="text-decoration: none;"><span>我的捐款</span></a></h3></div>
+                                          
+                                            <div class="col-auto">
+                                                <div class="text-dark fw-bold h5 mb-0 me-3"><span class="mon"></span></div>
+                                            </div>
+                                          
+                                            <!-- text-dark fw-bold h5 mb-0 -->
+                                            <!-- <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span>40,000元</span></div> -->
+                                        </div>
+                                        
+                                        <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><h3><span style="text-decoration: none;" >账户余额</span></h3></div>
+                                            <div class="text-dark fw-bold h5 mb-0">
+                                                <span id="balance">请点击查看</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-info py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><h3><a href="/f" style="text-decoration: none;"><span  >我的收藏</span></a></h3></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span class="col"></span></div>
+                                                </div>
+                                                <!-- <div class="col">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><h3><span>小红花</span></h3></div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><h3><span>我的设置</span></h3></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span></span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              
+               
+                </div>
+            </div>
+        
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    
+    <script type="text/javascript">
+        $(function() {
+            $('.wrap img').hover(
+                function(){
+                    var $this = $(this);
+                    $this.stop().animate({'opacity':'1.0','height':'210px','top':'0px','left':'0px'});
+                },
+                function(){
+                    var $this = $(this);
+                    $this.stop().animate({'opacity':'0.5','height':'325px','top':'-66.5px','left':'-150px'});
+                }
+            );
+        });
+    </script>  
+<!-- <script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script> -->
+ <script type="text/javascript" charset="utf-8">
+getTwitters('tweet', {
+id: 'mojothemes',
+count: 3,
+enableLinks: true,
+ignoreReplies: false,
+clearContents: true,
+// template: '<p>"%text%" <a href="http://twitter.com/%user_screen_name%/statuses/%id%/">%time%</a></p>'
+});
+</script> 
+<script src="../static/js/js2/jquery.min.js"></script>
+<script src="../static/js/js2//bootstrap-fileinput.js"></script>
+ <script type="text/javascript"> 
+    $(function () {
+        //比较简洁，细节可自行完善
+        $('#uploadSubmit').click(function () {
+            var data = new FormData($('#uploadForm')[0]);
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: data,
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    console.log(data);
+                    if(data.status){
+                        console.log('upload success');
+                    }else{
+                        console.log(data.message);
+                    }
+                },
+                error: function (data) {
+                    console.log(data.status);
+                }
+            });
+        });
+
+    })
+
+    function p(){
+        alert("保存成功")
+      
+    }
+    function getOptions() {
+            var position = $('#notification-position').val();
+            var closeTimeout = $('#close-timeout').val();
+            var animation = $('#animation').val();
+            var showButtons = $('#show-buttons').get(0).checked;
+            var showProgressBar = $('#show-progress-bar').get(0).checked;
+            var animationOptions = {
+                open: animation + '-in',
+                close: animation + '-out'
+            };
+        
+            if (animation === 'none') {
+                animationOptions = {
+                    open: false,
+                    close: false
+                };
+            }
+        
+            return options = {
+                description: 'I am a success notification',
+                position: position,
+                closeTimeout: closeTimeout,
+                closeWith: ['click'],
+                animation: animationOptions,
+                showButtons: showButtons,
+                buttons: {
+                    action: {
+                        callback: function(notification) {
+                            console.log('action button');
+                        }
+                    }
+                },
+                showProgress: showProgressBar
+            };
+        }   
+
+    //查看合约余额
+$('#balance').click(()=>{
+  $.ajax({
+      url:"http://localhost:8080/dai/countAmount",
+      type:"post",
+      dataType:"json",
+      success:function (data){
+        console.log(data)
+          if (data.code ==1){
+              if (data.message.URL != undefined)
+              $("#exampleModalLongTitle").html("出了点问题")
+              $(".modal-body").html(`<h1 class="text-danger  text-center">私有链没有链接上</h1>`)
+              $("#exampleModalLong").modal("show")
+              return
+          }
+          var options = getOptions();
+        options.title = '账户余额';
+        options.description = data.data/(10**18);
+        options.width = 500;
+        options.type = 'success';
+        options.closeTimeout = 3000;
+        GrowlNotification.notify(options);
+        // $("#exampleModalLongTitle").html("合约余额")
+        // $(".modal-body").html(`<div class="jumbotron">
+        //               <h1 class="display-3">合约余额:</h1>
+        //               <hr class="my-5">
+        //               <p class="text-info  text-center" style="font-size: 32px">${data.data/10**18}  ETH</p>
+        //               <br/>
+        //               <p class="lead">
+        //                 <a class="btn btn-primary btn-lg" href="https://github.com/coutlinx/Fauect_demo" role="button">查看合约代码</a>
+        //               </p>
+        //             </div>`)
+        // $("#exampleModalLong").modal("show")
+      },
+      error:function (data){
+        console.log(data)
+
+      }
+  })
+
+})
+</script> 
+
+<script src="../static/asset1/asset1/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/asset1/asset1/js/bs-init.js"></script>
+<script src="../static/asset1/asset1/js/theme.js"></script>
+
+    <!-- jq特效 -->
+      
+    <script type="text/javascript" src="../static/public1/stylesheets/assets/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/stylesheets/assets/vendor/jquery/jquery.js"></script>
+    <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/public1/stylesheets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  
+    <script src="../static/public1/stylesheets/assets/vendor/php-email-form/validate.js"></script>
+    <script src="../static/public1/stylesheets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../static/public1/public1/stylesheets/assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../static/public1/public1/stylesheets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../static/public1/stylesheets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/public1/stylesheets/assets/vendor/venobox/venobox.min.js"></script>
+  
+    <!-- Template Main JS File -->
+    <!-- <script src="/stylesheets/assets/js/main.js"></script> -->
+  
+   
+   
+     <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.min.js"></script> 
+     <!-- <script src="./public/javascripts/index.js"></script> -->
+     <script src="../static/public1/stylesheets/growl-notification.min.js"></script>
+     <script src="../static/public1/javascripts/web3.min.js"></script>
+     <script src="../static/js/profile.js"></script>
+</body>
+
+</html>

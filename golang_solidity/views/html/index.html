@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0, shrink-to-fit=no">
+    <title>链上公益-首页</title>
+
+ 
+
+   <!-- 原来 -->
+
+    <link rel="stylesheet" href="../static/asset1/asset1/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome5-overrides.min.css">
+  <!-- 轮播图 -->
+
+    <link rel="stylesheet" href="../static/css/css1/style.css" />
+
+    <!-- jquery特效 -->
+    <link rel="stylesheet" href="../static/public1/stylesheets/colored-theme.min.css">
+    <link rel="stylesheet" href="../static/public1/stylesheets/dark-theme.min.css">
+    <link rel="stylesheet" href="../static/public1/stylesheets/light-theme.min.css">
+  
+
+
+
+
+
+<script type="text/javascript" src="../static/js/js/jquery.js"></script>
+<link rel="stylesheet" href="../static/asset1/asset/css/font-awesome.css">
+<link rel="stylesheet" href="../static/css/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script src="../static/js/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+
+<script src="../static/asset1/asset1/js/jquery.min.js"></script>
+
+<script src="../static/asset1/asset/js/bootstrap.js"></script>
+
+<script src="../static/asset1/asset/js/form.js"></script>
+<script type="text/javascript" src="../static/js/js/coin-slider.min.js"></script> 
+<script>
+$(document).ready(function() {
+	$('#slider').coinslider({ 
+		hoverPause: true,
+		titleSpeed: 500,
+		width: 948,
+		height: 367,
+		effect: 'random',
+	
+	});
+});
+</script>
+
+<script>
+	$(document).ready(function(){
+			$(".controls").click(function(e){
+				if($(this).hasClass('down-arrow')) {
+					$(this).addClass('up-arrow').removeClass('down-arrow');
+				}
+				else {
+					$(this).addClass('down-arrow').removeClass('up-arrow');
+				}
+				e.preventDefault();
+				$("#logo-background").slideToggle("slow");
+			});
+	});
+</script>
+<link href="css/a.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="page-top">
+    <select class="form-control" name="position" style="display: none;" id="notification-position">
+        <option value="top-center" selected>Top Center</option>
+        <!-- <option value="bottom-center" selected>Bottom Center</option>
+        <option value="top-right" selected>Top Right</option> -->
+        <!-- <option value="bottom-right">Bottom Right</option>
+        <option value="top-left">Top Left</option>
+        <option value="bottom-left">Bottom Left</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="close-timeout">Close Timeout</label> -->
+    <select class="form-control" name="position" style="display: none;"  id="close-timeout">
+        <option value="0" selected>Disabled</option>
+        <!-- <option value="1000">1 Sec</option>
+        <option value="3000">3 Sec</option>
+        <option value="5000">5 Sec</option> -->
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Animation</label> -->
+    <select class="form-control" name="position" style="display: none;" id="animation">
+        <option value="none">None</option>
+        <option value="slide" selected>Slide</option>
+        <option value="fade">Fade</option>
+    </select>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Buttons</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-buttons">
+        <label  class="custom-control-label" for="show-buttons" >Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2">
+    <div class="for-group">
+    <!-- <label for="animation">Show Progress Bar</label> -->
+    <div class="custom-control custom-checkbox" style="display: none;">
+        <input type="checkbox" class="custom-control-input" id="show-progress-bar">
+        <label class="custom-control-label" for="show-progress-bar">Yes/No</label>
+    </div>
+    </div>
+    </div>
+    
+    </div> 
+  
+    <div id="wrapper">
+       
+         
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>链上公益</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active " href="/index"><i class="fas fa-tachometer-alt"></i><span>首页</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="/b"><i class="fas fa-user"></i><span>个人</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/c"><i class="fas fa-table"></i><span>捐赠</span></a></li>
+                   
+                    <li class="nav-item"><a class="nav-link " href="/f"><i class="fas fa-table"></i><span>收藏</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/e"><i class="fas fa-table"></i><span>项目分类</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login"><i class="far fa-user-circle"></i><span>登录</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register"><i class="fas fa-user-circle"></i><span>注册</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
+                                        <h6 class="dropdown-header">我的消息</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">2022-3-23</span>
+                                                <p>您捐赠了一个项目!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">2022-3-23</span>
+                                                <p>您捐赠了一个项目!</p>
+                                            </div>
+                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
+                                            <div class="me-3">
+                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                            </div>
+                                            <div><span class="small text-gray-500">2022-3-23</span>
+                                                <p>您捐赠了一个项目!</p>
+                                            </div>
+                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">未登录！</span><img class="border rounded-circle img-profile" src="../static/asset1/asset1/img/avatars/avatar1.jpeg" ></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="../views/profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;个人中心</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;活动历程</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="../views/profile.html"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;退出登录</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            
+                <!-- <div >
+                  
+                        <ul>
+                            <li style="list-style: none;">
+                                <img src="../images/img/b.webp" style="width: 100%;
+                                height: 330px;">
+                            </li>
+                           
+                        </ul>
+                  
+                   </div> -->
+                   <div class="container-fluid">
+                    <!-- <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0">公益项目</h3>
+                        <a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+                    </div> -->
+                   
+                    <hr>
+                    <div class="row" >
+
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><a href="../views/project_classify.html"><span>每月一捐</span></a></div>
+                                           
+                                            <!-- <div class="text-dark fw-bold h5 mb-0"><span>$40,000</span></div> -->
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><a href="../views/project_classify.html"><span>项目分类</span></a></div>
+                                            <!-- <div class="text-dark fw-bold h5 mb-0"><span>$215,000</span></div> -->
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                <div class="c-banner">
+                    <div class="banner">
+                        <ul>
+                            <li style="position: relative;">
+                                <img src="../static/images/img/lunbo1.jpg">
+                            </li>
+                            <li><img src="../static/images/img//lunbo2.jpg"></li>
+                            <li><img src="../static/images/img/lunbo1.jpg"></li>
+                        </ul>
+                    </div>              
+                </div>
+                
+               
+                    <h1 class="tag-background"><span class="background">事件</span></h1>
+                    <hr>
+                   <!-- <div> -->
+
+                
+                   <div class="add" style="--bs-gutter-x: 1.5rem;
+                   --bs-gutter-y: 0;
+                   display: flex;
+                   flex-wrap: wrap;
+                   margin-top: calc(-1 * var(--bs-gutter-y));
+                   margin-right: calc(-.5 * var(--bs-gutter-x));
+                   margin-left: calc(-.5 * var(--bs-gutter-x));
+                   margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+               " >
+               
+                                    
+                                                 
+          
+ 
+
+
+
+        </div>
+               
+
+        </div>
+                   
+                      
+                    <div class="clear"></div>
+                    <hr />
+                    
+                  
+                                           
+            </div>
+          
+        <!-- </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a> -->
+    </div>
+    
+    
+
+
+    <div>
+   <a href="../views/profile.html"><button class="btn btn-primary py-0" type="button" style="    width: 50%;
+    height: 66px;background-color:crimson">我的</button>
+    </a> 
+    <a href="../views/profile.html">  <button class="btn btn-primary py-0" type="button"style="    width: 50%;
+    height: 66px;float: left;" >首页</button>
+    </a>
+</div>
+</div>
+    </div>
+</div>
+</div>
+   
+   
+
+    <!-- <script type="text/javascript">
+        
+ 
+                   var cvs1 = document.getElementById("cvs1");
+                   cvs1.onclick=function(){
+                       window.location.href="http://127.0.0.1:5501/static/views/details.html"
+                   }
+                   var imgObj1 = new Image();
+                  imgObj1.src = "../static/images/img/b.png";
+        //待图片加载完后，将其显示在canvas上
+             imgObj1.onload = function(){
+                var ctx = cvs1.getContext('2d');
+                ctx.drawImage(this, 0, 0);//this即是imgObj,保持图片的原始大小：470*480
+                ctx.drawImage(this, 0, 0,299,190);//改变图片的大小到1024*768
+            }
+
+            var cvs2 = document.getElementById("cvs2");
+            cvs2.onclick=function(){
+                       window.location.href="http://127.0.0.1:5501/static/views/details.html"
+                   }
+                   var imgObj2 = new Image();
+        imgObj2.src = "../static/images/img/b.png";
+        //待图片加载完后，将其显示在canvas上
+        imgObj2.onload = function(){
+                var ctx = cvs2.getContext('2d');
+                ctx.drawImage(this, 0, 0);//this即是imgObj,保持图片的原始大小：470*480
+                ctx.drawImage(this, 0, 0,299,190);//改变图片的大小到1024*768
+            }
+
+            var cvs3 = document.getElementById("cvs3");
+            cvs3.onclick=function(){
+                       window.location.href="http://127.0.0.1:5501/static/views/details.html"
+                   }
+                   var imgObj3 = new Image();
+        imgObj3.src = "../static/images/img/b.png";
+        //待图片加载完后，将其显示在canvas上
+        imgObj3.onload = function(){
+                var ctx = cvs3.getContext('2d');
+                ctx.drawImage(this, 0, 0);//this即是imgObj,保持图片的原始大小：470*480
+                ctx.drawImage(this, 0, 0,299,190);//改变图片的大小到1024*768
+            }
+          
+
+            //添加收藏
+            Array.from(document.getElementsByClassName("add")).forEach(i=>i.onclick=function(){
+                alert("添加收藏成功，可在收藏页面查看!")
+            })
+     
+        $(function() {
+            $('.wrap img').hover(
+                function(){
+                    var $this = $(this);
+                    $this.stop().animate({'opacity':'1.0','height':'210px','top':'0px','left':'0px'});
+                },
+                function(){
+                    var $this = $(this);
+                    $this.stop().animate({'opacity':'0.5','height':'325px','top':'-66.5px','left':'-150px'});
+                }
+            );
+        });
+    </script>   -->
+<!-- <script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script> -->
+<script type="text/javascript" src="../static/js/js1/jquery.min.js"></script>
+<script type="text/javascript">
+//定时器返回值
+var time=null;
+//记录当前位子
+var nexImg = 0;
+//用于获取轮播图图片个数
+var imgLength = $(".c-banner .banner ul li").length;
+//当时动态数据的时候使用,上面那个删除
+// var imgLength =0;
+//设置底部第一个按钮样式
+$(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+
+//页面加载
+$(document).ready(function(){
+    // dynamicData();
+    //启动定时器,设置时间为3秒一次
+    time =setInterval(intervalImg,3000);
+});
+
+//点击上一张
+$(".preImg").click(function(){
+    //清楚定时器
+    clearInterval(time);
+    var nowImg = nexImg;
+    nexImg = nexImg-1;
+    console.log(nexImg);
+    if(nexImg<0){
+        nexImg=imgLength-1;
+    }
+    //底部按钮样式设置
+    $(".c-banner .jumpBtn ul li").css("background-color","white");
+    $(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+    
+    //将当前图片试用绝对定位,下一张图片试用相对定位
+    $(".c-banner .banner ul img").eq(nowImg).css("position","absolute");
+    $(".c-banner .banner ul img").eq(nexImg).css("position","relative");
+    
+    //轮播淡入淡出
+    $(".c-banner .banner ul li").eq(nexImg).css("display","block");
+    $(".c-banner .banner ul li").eq(nexImg).stop().animate({"opacity":1},1000);
+    $(".c-banner .banner ul li").eq(nowImg).stop().animate({"opacity":0},1000,function(){
+        $(".c-banner ul li").eq(nowImg).css("display","none");
+    });
+    
+    //启动定时器,设置时间为3秒一次
+    time =setInterval(intervalImg,3000);
+})
+
+//点击下一张
+$(".nexImg").click(function(){
+    clearInterval(time);
+    intervalImg();
+    time =setInterval(intervalImg,3000);
+})
+
+//轮播图
+function intervalImg(){
+    if(nexImg<imgLength-1){
+        nexImg++;
+    }else{
+        nexImg=0;
+    }
+    
+    //将当前图片试用绝对定位,下一张图片试用相对定位
+    $(".c-banner .banner ul img").eq(nexImg-1).css("position","absolute");
+    $(".c-banner .banner ul img").eq(nexImg).css("position","relative");
+    
+    $(".c-banner .banner ul li").eq(nexImg).css("display","block");
+    $(".c-banner .banner ul li").eq(nexImg).stop().animate({"opacity":1},1000);
+    $(".c-banner .banner ul li").eq(nexImg-1).stop().animate({"opacity":0},1000,function(){
+        $(".c-banner .banner ul li").eq(nexImg-1).css("display","none");
+    });
+    $(".c-banner .jumpBtn ul li").css("background-color","white");
+    $(".c-banner .jumpBtn ul li[jumpImg="+nexImg+"]").css("background-color","black");
+}
+
+//轮播图底下按钮
+//动态数据加载的试用应放在请求成功后执行该代码,否则按钮无法使用
+$(".c-banner .jumpBtn ul li").each(function(){
+    //为每个按钮定义点击事件
+    $(this).click(function(){
+        clearInterval(time);
+        $(".c-banner .jumpBtn ul li").css("background-color","white");
+        jumpImg = $(this).attr("jumpImg");
+        if(jumpImg!=nexImg){
+            var after =$(".c-banner .banner ul li").eq(jumpImg);
+            var befor =$(".c-banner .banner ul li").eq(nexImg);
+            
+            //将当前图片试用绝对定位,下一张图片试用相对定位
+            $(".c-banner .banner ul img").eq(nexImg).css("position","absolute");
+            $(".c-banner .banner ul img").eq(jumpImg).css("position","relative");
+            
+            after.css("display","block");
+            after.stop().animate({"opacity":1},1000);
+            befor.stop().animate({"opacity":0},1000,function(){
+                befor.css("display","none");
+            });
+            nexImg=jumpImg;
+        }
+        $(this).css("background-color","black");
+        time =setInterval(intervalImg,3000);
+    });
+});
+
+</script>
+
+ <script type="text/javascript" charset="utf-8">
+getTwitters('tweet', {
+id: 'mojothemes',
+count: 3,
+enableLinks: true,
+ignoreReplies: false,
+clearContents: true,
+// template: '<p>"%text%" <a href="http://twitter.com/%user_screen_name%/statuses/%id%/">%time%</a></p>'
+});
+</script> 
+
+<script src="../static/asset1/asset1/js/chart.min.js"></script>
+ <script src="../static/asset1/asset1/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/asset1/asset1/js/bs-init.js"></script>
+<script src="../static/asset1/asset1/js/theme.js"></script>
+<script src="../static/js/index.js"></script>
+
+  <!-- jq特效 -->
+      
+  <script type="text/javascript" src="../static/public1/stylesheets/assets/vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/stylesheets/assets/vendor/jquery/jquery.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+
+  <script src="../static/public1/stylesheets/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/public1/public1/stylesheets/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/public1/stylesheets/assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="/stylesheets/assets/js/main.js"></script> -->
+
+ 
+ 
+   <script src="../static/public1/stylesheets/assets/vendor/bootstrap/js/bootstrap.min.js"></script> 
+   <!-- <script src="./public/javascripts/index.js"></script> -->
+   <script src="../static/public1/stylesheets/growl-notification.min.js"></script>
+   <script src="../static/public1/javascripts/web3.min.js"></script>
+
+</body>
+
+</html>

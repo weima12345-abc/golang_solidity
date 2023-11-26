@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>可捐助项目分类</title>
+    <link rel="stylesheet" href="../static/asset1/asset1/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/asset1/asset1/fonts/fontawesome5-overrides.min.css">
+    <script type="text/javascript" src="../js/js/jquery.js"></script>
+
+    <link href="../static/css/jquery.searchableSelect.css" rel="stylesheet" type="text/css">
+
+
+
+    <style type="text/css">
+     
+     
+
+   #a li{
+list-style: none;
+   }
+
+   #b li{
+      margin-left: 25px;
+   }
+    </style>
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>链上公益</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    
+                    <li class="nav-item"><a class="nav-link " href="/index"><i class="fas fa-tachometer-alt"></i><span>首页</span></a></li>
+                    <li class="nav-item"><a class="nav-link " href="/b"><i class="fas fa-user"></i><span>个人</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/c"><i class="fas fa-table"></i><span>捐赠</span></a></li>
+                   
+                    <li class="nav-item"><a class="nav-link active" href="/f"><i class="fas fa-table"></i><span>收藏</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/e"><i class="fas fa-table"></i><span>项目分类</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login"><i class="far fa-user-circle"></i><span>登录</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register"><i class="fas fa-user-circle"></i><span>注册</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                        </form>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="me-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="搜索你想要的 ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                          
+                           
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4"><a href="../html/index.html"> <img style="width: 64px;
+                        height: 44px;" src="../static/images/img/a.webp"></a>
+                        </h3>
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <center>
+                                <select name="myselect" id="myselect">
+                                    <option  value="全部项目">全部项目 </option>
+                                    <option  value="教育助学">教育助学</option>
+                                    <option  value="疾病救助">疾病救助</option>
+                                    <option  value="济困救灾">济困救灾</option>
+                                    <option  value="自然保护">自然保护</option>
+                                    
+                                    </select>
+                                   <script>
+                          
+
+                                   </script>
+                            </center>
+                            <p class="text-primary m-0 fw-bold">捐助分类</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 text-nowrap"  >
+                                    <!-- <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                <option value="10" selected="">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>&nbsp;</label></div>
+                                </div> -->
+                                <div class="col-md-6 ">
+                                    <!-- <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="搜索"></label></div> -->
+                                </div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <!-- <thead id="b">
+                                        <ul id="b">
+                                            <li onclick="q()" class="btn btn-primary py-0">教育助学</li></a>
+                                            <li onclick="w()"class="btn btn-primary py-0">疾病救助</li>
+                                            <li onclick="e()" class="btn btn-primary py-0">济困救灾</li>
+                                            <li onclick="r()" class="btn btn-primary py-0">自然保护</li>
+                                          
+                                        </ul>
+                                            
+                                           
+                                             <th onclick="q()"  >教育助学</th>
+                                            <th onclick="w()" >疾病救助</th>
+                                            <td onclick="e()"  >济困救灾</td>
+                                            
+                                            <td onclick="r()" >自然保护</td>
+                                        
+                                    </thead> -->
+                                    <tbody class="Add">
+                                        <tr class="detail">
+                                            <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar1.jpeg">爱心午餐1</td>
+                                            <!-- <td>爱心午餐</td> -->
+                                            <td>　　医生每周三都来小区义诊，还有志愿者把药送到家里来　医生每周三都来小区义诊，还有志愿者把药送到家里来　医生每周三都来小区义诊，还有志愿者把药送到家里来　医生每周三都来小区义诊，还有志愿者把药送到家里来医生每周三都来小区义诊，还有志愿者把药送到家里来<br></td>
+                                            
+                                           <!-- <td> <a href="../views/details.html"> <button class="btn btn-primary py-0" type="button" >详情</button></a> </td> -->
+                                            <!-- <td>1</td> -->
+                                        </tr>
+                                        <tr class="detail">
+                                            <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar2.jpeg">爱心午餐2</td>
+                                            <!-- <td>爱心午餐2</td> -->
+                                            <td>　“医生每周三都来小区义诊，还有志愿者把药送到家里来<br></td>
+                                           
+                                            <!-- <td>   <a href="../views/details.html"> <button class="btn btn-primary py-0" type="button" >详情</button></a></td> -->
+                                        </tr>
+                                       
+                                        
+                                        
+                                    </tbody>
+                                    <!-- <tfoot>
+                                        <tr>
+                                            <th>捐助项目</th>
+                                            <td><strong>日期</strong></td>
+                                            <th>金额</th>
+                                        </tr>
+                                    </tfoot> -->
+                                </table>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">详情页</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>灯火入眉</span></div>
+                    
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <script src="../static/js/jquery-1.11.1.min.js"></script>
+<script src="../static/js/jquery.searchableSelect.js"></script>
+    <script src="../static/asset1/asset1/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/asset1/asset1/js/bs-init.js"></script>
+    <script src="../static/asset1/asset1/js/theme.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script>
+        $("#myselect").change(function(){
+    var opt=$("#myselect").val();
+    if(opt=="教育助学"){
+      $(".Add").html("")
+             var inserStrings=`
+              <tr class="detail">
+                                              <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar1.jpeg">爱心午餐1</td>
+                                              <!-- <td>爱心午餐</td> -->
+                                              <td>　“楼道更干净了，邻里关系更和谐温馨了，大家参加‘邻舍+’志愿活动的热情很高涨。我们既是参与者，也是受益者。”嵊州市仙景花苑居民丁伟东说。嵊州市委宣传部工作人员冯波表示，当地通过“邻舍+”志愿服务品牌“4+计划”项目化运作，以“小家”的和睦带动“大家”的文明，实现了“孩子和乐、家庭和美、邻舍和睦、社会和谐”的“四和”愿景。<br></td>
+
+
+                                              
+                                          </tr>
+                                          `
+              $.ajax({
+                url: 'http://localhost:8080/e',
+                type: 'get',
+                datatype: 'json',
+                success: function(res) {
+                    $(".Add").html(inserStrings + document.getElementsByClassName("Add")[0].innerHTML)
+                }
+            })
+   }else if(opt=="全部项目"){
+    $(".Add").html("")
+    for (var i=1;i<12;i++){
+
+
+           var inserStrings=`
+            <tr class="detail">
+                                            <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar2.jpeg">爱心午餐1</td>
+                                            <!-- <td>爱心午餐</td> -->
+                                            <td>　“楼道更干净了，邻里关系更和谐温馨了，大家参加‘邻舍+’志愿活动的热情很高涨。我们既是参与者，也是受益者。”嵊州市仙景花苑居民丁伟东说。嵊州市委宣传部工作人员冯波表示，当地通过“邻舍+”志愿服务品牌“4+计划”项目化运作，以“小家”的和睦带动“大家”的文明，实现了“孩子和乐、家庭和美、邻舍和睦、社会和谐”的“四和”愿景。<br></td>
+
+
+                                       
+                                        </tr>
+                                        `
+            $.ajax({
+              url: 'http://localhost:8080/e',
+              type: 'get',
+              datatype: 'json',
+              success: function(res) {
+                  $(".Add").html(inserStrings + document.getElementsByClassName("Add")[0].innerHTML)
+              }
+          })
+        }}
+   else if(opt=="疾病救助"){
+    $(".Add").html("")
+    for (var i=1;i<4;i++){
+
+
+           var inserStrings=`
+            <tr class="detail">
+                                            <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar3.jpeg">爱心午餐1</td>
+                                            <!-- <td>爱心午餐</td> -->
+                                            <td>　“楼道更干净了，邻里关系更和谐温馨了，大家参加‘邻舍+’志愿活动的热情很高涨。我们既是参与者，也是受益者。”嵊州市仙景花苑居民丁伟东说。嵊州市委宣传部工作人员冯波表示，当地通过“邻舍+”志愿服务品牌“4+计划”项目化运作，以“小家”的和睦带动“大家”的文明，实现了“孩子和乐、家庭和美、邻舍和睦、社会和谐”的“四和”愿景。<br></td>
+
+                                        </tr>
+                                        `
+            $.ajax({
+              url: 'http://localhost:8080/e',
+              type: 'get',
+              datatype: 'json',
+              success: function(res) {
+                  $(".Add").html(inserStrings + document.getElementsByClassName("Add")[0].innerHTML)
+              }
+          })
+        }
+  }
+  else if(opt=="疾病救助"){
+    $(".Add").html("")
+    for (var i=1;i<4;i++){
+
+
+           var inserStrings=`
+            <tr class="detail">
+                                            <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar4.jpeg">爱心午餐1</td>
+                                            <!-- <td>爱心午餐</td> -->
+                                            <td>　“楼道更干净了，邻里关系更和谐温馨了，大家参加‘邻舍+’志愿活动的热情很高涨。我们既是参与者，也是受益者。”嵊州市仙景花苑居民丁伟东说。嵊州市委宣传部工作人员冯波表示，当地通过“邻舍+”志愿服务品牌“4+计划”项目化运作，以“小家”的和睦带动“大家”的文明，实现了“孩子和乐、家庭和美、邻舍和睦、社会和谐”的“四和”愿景。<br></td>
+
+
+                                           
+                                        </tr>
+                                        `
+            $.ajax({
+              url: 'http://localhost:8080/e',
+              type: 'get',
+              datatype: 'json',
+              success: function(res) {
+                  $(".Add").html(inserStrings + document.getElementsByClassName("Add")[0].innerHTML)
+              }
+          })
+        }}
+        else if(opt=="济困救灾"){
+          $(".Add").html("")
+          for (var i=1;i<6;i++){
+
+
+                 var inserStrings=`
+                  <tr class="detail">
+                                                  <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar5.jpeg">爱心午餐1</td>
+                                                  <!-- <td>爱心午餐</td> -->
+                                                  <td>　“楼道更干净了，邻里关系更和谐温馨了，大家参加‘邻舍+’志愿活动的热情很高涨。我们既是参与者，也是受益者。”嵊州市仙景花苑居民丁伟东说。嵊州市委宣传部工作人员冯波表示，当地通过“邻舍+”志愿服务品牌“4+计划”项目化运作，以“小家”的和睦带动“大家”的文明，实现了“孩子和乐、家庭和美、邻舍和睦、社会和谐”的“四和”愿景。<br></td>
+
+
+                                              </tr>
+                                              `
+                  $.ajax({
+                    url: 'http://localhost:8080/e',
+                    type: 'get',
+                    datatype: 'json',
+                    success: function(res) {
+                        $(".Add").html(inserStrings + document.getElementsByClassName("Add")[0].innerHTML)
+                    }
+                })
+              }}else{
+                $(".Add").html("")
+                for (var i=1;i<3;i++){
+
+
+                       var inserStrings=`
+                        <tr class="detail">
+                                                        <td><img class="rounded-circle me-2" width="100" height="100" src="../static/asset1/asset1/img/avatars/avatar3.jpeg">爱心午餐1</td>
+                                                        <!-- <td>爱心午餐</td> -->
+                                                        <td>　“楼道更干净了，邻里关系更和谐温馨了，大家参加‘邻舍+’志愿活动的热情很高涨。我们既是参与者，也是受益者。”嵊州市仙景花苑居民丁伟东说。嵊州市委宣传部工作人员冯波表示，当地通过“邻舍+”志愿服务品牌“4+计划”项目化运作，以“小家”的和睦带动“大家”的文明，实现了“孩子和乐、家庭和美、邻舍和睦、社会和谐”的“四和”愿景。<br></td>
+
+                                        
+                                                    </tr>
+                                                    `
+                        $.ajax({
+                          url: 'http://localhost:8080/e',
+                          type: 'get',
+                          datatype: 'json',
+                          success: function(res) {
+                              $(".Add").html(inserStrings + document.getElementsByClassName("Add")[0].innerHTML)
+                          }
+                      })
+              }}
+  });
+    </script>
+</body>
+
+</html>
